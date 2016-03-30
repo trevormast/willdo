@@ -5,7 +5,6 @@
 <table class="table table-striped">
   <thead>
     <tr>
-      <th>ID</th>
       <th><%= model_class.human_attribute_name(:description) %></th>
       <th><%= model_class.human_attribute_name(:tag) %></th>
       <th><%= model_class.human_attribute_name(:created_at) %></th>
@@ -15,7 +14,6 @@
   <tbody>
     <% @commitments.each do |commitment| %>
       <tr>
-        <td><%= commitment.id %></td>
         <td><%= commitment.description %></td>
         <td><%= commitment.tag %></td>
         <td><%=l commitment.created_at, format: :long %></td>
